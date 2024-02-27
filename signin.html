@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            margin: 0;
+        }
+
+        h3 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner {
+            padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+            max-width: 850px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+
+        .img-holder {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img-holder img {
+            max-width: 80%;
+        }
+
+        form {
+            width: 100%;
+        }
+        input{
+    width: calc(100% - 20px); 
+    margin-bottom: 10px; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    display: block; 
+    font-size: 16px; 
+    transition: border-color 0.3s; 
+}
+
+.button {
+        width: 50%;
+        padding: 15px;
+        cursor: pointer;
+        background-color: #FF735C;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        margin-top: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 16px;
+    }
+    
+    .button:hover {
+        background-color: #fb6048;
+        transform: scale(1.05);
+    }
+    
+    .button:active {
+        transform: scale(0.95);
+    }
+
+        @media screen and (min-width: 768px) {
+            .inner {
+                flex-direction: row;
+            }
+
+            .img-holder {
+                width: 50%;
+                text-align: center;
+            }
+
+            form {
+                width: 50%;
+                padding-left: 45px;
+                padding-top: 35px;
+                padding-right: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <dic class="container">
+        <div class="inner">
+            <div class="img-holder">
+                <img src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7863.jpg?w=740&t=st=1708686017~exp=1708686617~hmac=104f521603135816c460ce334cbe96f1ca6a32950fc58554db8bcf6a9956ceb9"
+                    alt="img">
+                    
+            </div>
+            <form name="myform" action="signin.html">
+                <h3> signin Form</h3>
+
+               
+               
+                <div class="form-wrapper">
+                    <input type="text" placeholder="Email Address" class="form-control" name="email" >
+                </div>
+              
+                <div class="form-wrapper">
+                    <input type="password" placeholder="Password " class="form-control" name="password">
+
+                </div>
+             
+                <input type="button" class="button" name="signIn" value="signIn" onclick="validForm()" return false>
+                <br><br>
+                <span>For registration ? <a href="index.html">signUp</a></span>
+            </form>
+
+    <script src="signin.js"></script>
+        </div>
+        </div>
+</body>
+
+</html>
+
